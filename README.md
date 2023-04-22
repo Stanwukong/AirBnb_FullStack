@@ -14,6 +14,7 @@ This is a full stack Airbnb clone built using Next.js 13, App router, React, Tai
 * [Next.js](https://next.js.org) - A React framework for server-side rendering and static site generation
 * [React](https://reactjs.org) - A JavaScript library for building user interfaces
 * [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework
+* [Zustand](https://zustand.surge.sh) - A state management library for React
 * [Prisma](https://prisma.io) - An open-source ORM for Node.js
 * [MongoDB](https://mongodb.com) - A document-based, NoSQL database
 * [NextAuth](https://next-auth.js.org) - Authentication for Next.js

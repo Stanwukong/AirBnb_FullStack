@@ -1,14 +1,16 @@
-import { Nunito } from 'next/font/google'
+import { Nunito } from "next/font/google"
 
-import './globals.css'
-import Navbar from './components/Navbar/Navbar';
+import "./globals.css"
+import Navbar from "./components/Navbar/Navbar"
+import ClientOnly from "./components/ClientOnly"
+import Modal from "./components/modals/Modal"
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb clone',
+  title: "Airbnb",
+  description: "Airbnb clone",
 }
 
-const font = Nunito({ subsets: ['latin'] });
+const font = Nunito({ subsets: ["latin"] })
 
 export default function RootLayout({
   children,
@@ -18,8 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
-        {children}</body>
+        <ClientOnly>
+          <Modal isOpen title="Hello Warudo"/>
+          <Navbar />
+        </ClientOnly>
+        {children}
+      </body>
     </html>
   )
 }
