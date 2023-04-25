@@ -12,8 +12,8 @@ datasource db {
 
 model User {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  email String? @unique
   name String?
+  email String? @unique
   emailVerified DateTime?
   image String?
   hashedPassword String?
@@ -34,13 +34,11 @@ model Account {
   provider String
   refresh_token String? @db.String
   access_token String? @db.String
-  expires_at DateTime?
+  expires_at Int?
   token_type String? 
   scope String? 
   id_token String? @db.String
-  session_state String? 
-  createdAt DateTime @default(now())
-
+  session_state String?
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
@@ -48,23 +46,18 @@ model Account {
 
 model Listing {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  userId String @db.ObjectId
   title String
   description String
   imageSrc String
-  category String
-  address String
-  city String
-  state String
-  price Int
-  numOfGuests Int
-  numOfBeds Int
-  numOfBaths Int
-  roomCount Int
-  rating Int
-  locationValue String
+  category String  
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  roomCount Int
+  numOfBaths Int  
+  numOfGuests Int
+  locationValue String
+  userId String @db.ObjectId
+  price Int
+
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   reservations Reservation[]

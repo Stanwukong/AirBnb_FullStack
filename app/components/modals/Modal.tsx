@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io"
 import Button from "../Button"
 
 interface ModalProps {
-  isOpen?: Boolean
+  isOpen?: boolean
   onClose: () => void
   onSubmit: () => void
   title?: string
@@ -29,11 +29,13 @@ const Modal: React.FC<ModalProps> = ({
   secondaryAction,
   secondaryActionLabel,
 }) => {
-  const [showModal, setShowModal] = useState(isOpen)
+  const [showModal, setShowModal] = useState(isOpen);
 
   useEffect(() => {
-    setShowModal(isOpen)
-  }, [isOpen])
+    setTimeout(() => {
+      setShowModal(isOpen)
+    }, 3000)
+  }, [])
 
   const handleClose = useCallback(() => {
     if (disabled) {
@@ -58,7 +60,7 @@ const Modal: React.FC<ModalProps> = ({
     if (disabled || !secondaryAction) {
       return
     }
-    secondaryAction()
+    secondaryAction();
   }, [disabled, secondaryAction])
 
   if (!isOpen) {
