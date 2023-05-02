@@ -51,9 +51,9 @@ const LoginModal = () => {
       }
 
       if (callback?.error) {
-        toast.error("Error: " + callback.error);
+        toast.error(callback.error);
       }
-    })
+    });
   }
 
   const toggle = useCallback(() => {
