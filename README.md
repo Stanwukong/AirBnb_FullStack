@@ -20,7 +20,7 @@ This is a full stack Airbnb clone built using Next.js 13, App router, React, Tai
 * [Prisma](https://prisma.io) - An open-source ORM for Node.js
 * [MongoDB](https://mongodb.com) - A document-based, NoSQL database
 * [NextAuth](https://next-auth.js.org) - Authentication for Next.js
-* [Stripe](https://stripe.com) - A payment processing API
+* [Next-Cloudinary](https://next-cloudinary.spacejelly.dev) - A Next.js library for image and video upload and storage
 
 ## Getting Started
 1. Clone the repository
