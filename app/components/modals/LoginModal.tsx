@@ -19,8 +19,8 @@ import useLoginModal from "../../hooks/useLoginModal"
 const LoginModal = () => {
   const router = useRouter()
 
-  const registerModal = useRegisterModal()
-  const loginModal = useLoginModal()
+  const registerModal = useRegisterModal();
+  const loginModal = useLoginModal();
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -41,7 +41,8 @@ const LoginModal = () => {
     signIn("credentials", {
       ...data,
       redirect: false,
-    }).then((callback) => {
+    })
+    .then((callback) => {
       setIsLoading(false)
 
       if (callback?.ok) {
@@ -137,4 +138,4 @@ const LoginModal = () => {
   )
 }
 
-export default LoginModal
+export default LoginModal;

@@ -2,6 +2,9 @@
 
 This is a full stack Airbnb clone built using Next.js 13, App router, React, Tailwind CSS, Prisma, MongoDB, and NextAuth. It provides a platform for users to browse and book vacation rentals as well as list their own rental properties.
 
+## Screenshots
+![Home Page](https://i.ibb.co/rkXdF5V/Airbnb-Home.jpg)
+
 ## Features
 * User User authentication and authorization using NextAuth
 * User profile management
