@@ -6,11 +6,10 @@ This is a full stack Airbnb clone built using Next.js 13, App router, React, Tai
 ![Home Page](https://i.ibb.co/rkXdF5V/Airbnb-Home.jpg)
 
 ## Features
-* User User authentication and authorization using NextAuth
+* User authentication and authorization using NextAuth
 * User profile management
-* Properly listing management
+* Property listing management
 * Search functionality to filter rental properties based on location, date range, and number of guests
-* Intergration with the Stripe API for payment processing
 * Responsive design Using Tailwind CSS
 
 ## Technologies Used
