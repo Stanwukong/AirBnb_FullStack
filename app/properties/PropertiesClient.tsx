@@ -10,7 +10,7 @@ import { toast } from "react-hot-toast";
 import ListingCard from "../components/listings/ListingCard";
 
 interface PropertiesClientProps {
-	listings: SafeListing;
+	listings: SafeListing[];
 	currentUser: SafeUser | null;
 
 }
