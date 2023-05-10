@@ -15,7 +15,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
 	icon: Icon,
 	label,
 	selected,
-	// description
+	description
 }) => {
 	const router = useRouter();
 	const params = useSearchParams();
