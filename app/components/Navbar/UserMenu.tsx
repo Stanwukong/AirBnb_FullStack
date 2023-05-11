@@ -34,8 +34,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
     rentModal.onOpen()
   }, [currentUser, loginModal, rentModal])
   return (
-    <div className="relative">
-      <div className="flex flex-row items-center ga[-3">
+    <div className="relative focus:outline-none">
+      <div className="flex flex-row items-center gap-3">
         <div
           onClick={onRent}
           className="
@@ -97,6 +97,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 							flex
 							flex-col
 							cursor-pointer
+              focus:outline-none
 							"
           >
             {currentUser ? (

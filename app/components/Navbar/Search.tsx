@@ -61,6 +61,7 @@ const Search = () => {
 		  hover:shadow-md
 		  transition
 		  cursor-pointer
+		  focus:outline-none
 		"
     >
       <div
